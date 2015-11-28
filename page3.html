@@ -14,10 +14,13 @@
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link type="text/css" href="css/bootstrap-timepicker.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+    <!-- <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script> -->
   </head>
   <body>
     <div class="container">
@@ -41,7 +44,7 @@
                 <div class="row">
                     <div class='col-sm-6'>
                         <div class="form-group">
-                            <div class='input-group date' id='datetimepicker1'>
+                            <div class='input-group date' id='datetimepicker'>
                                 <input type='text' class="form-control" />
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-calendar"></span>
@@ -51,9 +54,31 @@
                     </div>
                     <script type="text/javascript">
                         $(function () {
-                            $('#datetimepicker1').datetimepicker();
+                            // $('#datetimepicker').datetimepicker();
+                            $('#datetimepicker').datepicker();
+
                         });
                     </script>
+                </div>
+                <div class="row">
+                  <div class='col-sm-6'>
+                      <!-- <div class="form-group">
+                          <div class='input-group date' id='datetimepicker3'>
+                              <input type='text' class="form-control" />
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-time"></span>
+                              </span>
+                          </div>
+                      </div> -->
+                      <div class="input-group bootstrap-timepicker timepicker">
+                          <input id="timepicker1" type="text" class="form-control input-small">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                      </div>
+                  </div>
+                  <script type="text/javascript">
+
+                          $('#timepicker1').timepicker();
+                  </script>
                 </div>
               </div>
               <p>What subject do you need help with?</p>
