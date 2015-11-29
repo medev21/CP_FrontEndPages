@@ -135,7 +135,7 @@ a:focus {
     }
 }
 
-.intro {
+.intro .intro-page3  {
     display: table;
     width: 100%;
     height: auto;
@@ -150,16 +150,16 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro .intro-body {
+.intro .intro-page3  .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
+.intro .intro-page3  .intro-body .brand-heading {
     font-size: 40px;
 }
 
-.intro .intro-body .intro-text {
+.intro .intro-page3  .intro-body .intro-text {
     font-size: 18px;
 }
 
